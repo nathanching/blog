@@ -69,6 +69,7 @@
         
         .show {
             opacity: 0.9;
+            filter: brightness(60%);
             -webkit-transition: all 3s 3s ease-in-out;
             -moz-transition: all 3s 3s ease-in-out;
             -ms-transition: all 3s 3s ease-in-out;
@@ -126,7 +127,7 @@
         function restartTimer() {
             timePrompt = setTimeout(function() {
                 changeImage();
-            }, 15000);
+            }, 30000);
         }
 
         function changeImage() {
