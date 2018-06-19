@@ -79,18 +79,24 @@
       z-index: 3;
     }
 
-    .corner {
+    .linkedin {
       position: fixed;
       right: 0;
       bottom: 0;
-      z-index: 1234;
-      transform: scale(.5);
+      z-index: 100;
+      transform: scale(0.7);
       transform-origin: bottom right;
+      width: 50px;
+      height: 50px;
+      opacity: 0.05;
+    }
 
-      width: 75px;
-      height: 75px;
-      opacity: 0.25;
-
+    .bar {
+      transorm-origin: top left;
+      width: 30px;
+      height: 5px;
+      background-color: grey;
+      margin: 6px 6px;
 
     }
 
@@ -118,6 +124,11 @@
 </head>
 
 <body>
+
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+
   <div id="backgroundImage"></div>
 
   <div class="hide" id="backgroundImage1"></div>
@@ -130,7 +141,8 @@
     <span><small><b>FOREVER</b></small></span> UNDER CONSTRUCTION
     <span><i>Nathan Ching</i></span>
   </div>
-  <footer class="corner">
+
+  <footer class="linkedin">
     <a href="https://linkedin.com/in/nathanching" target="_blank">
 				<svg version="1.1" id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path fill="#0094FF" d="M37.039,0H2.952C1.323,0,0,1.291,0,2.883v34.23c0,1.594,1.323,2.886,2.952,2.886h34.087 c1.632,0,2.961-1.292,2.961-2.886V2.883C40,1.291,38.671,0,37.039,0z M11.863,34.085H5.93V14.996h5.933V34.085z M8.898,12.386 c-1.901,0-3.44-1.542-3.44-3.44c0-1.897,1.54-3.439,3.44-3.439c1.897,0,3.438,1.542,3.438,3.439 C12.336,10.845,10.795,12.386,8.898,12.386z M34.085,34.085h-5.929v-9.283c0-2.214-0.041-5.062-3.083-5.062 c-3.088,0-3.561,2.412-3.561,4.901v9.443h-5.929V14.996h5.691v2.608h0.079c0.791-1.501,2.728-3.083,5.613-3.083 c6.008,0,7.117,3.953,7.117,9.093V34.085z"/></svg>
 			</a>
