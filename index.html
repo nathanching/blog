@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>Forever Under Construction</title>
+  <title>(Still) Under Construction</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet" type="text/css">
   <style type="text/css">
     body {
@@ -31,7 +31,7 @@
     #backgroundImage1,
     #backgroundImage2 {
       background-color: #555;
-      background-image: url('https://source.unsplash.com/collection/495599/1600');
+      background-image: url('https://source.unsplash.com/collection/1016249/1600');
       background-position: center center;
       background-size: cover;
     }
@@ -91,15 +91,6 @@
       opacity: 0.05;
     }
 
-    .bar {
-      transorm-origin: top left;
-      width: 30px;
-      height: 5px;
-      background-color: grey;
-      margin: 6px 6px;
-
-    }
-
     @media screen and (max-width: 768px) {
       .infoText {
         font-size: 40px;
@@ -125,10 +116,6 @@
 
 <body>
 
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
-
   <div id="backgroundImage"></div>
 
   <div class="hide" id="backgroundImage1"></div>
@@ -138,7 +125,7 @@
   <div class="overlay"></div>
 
   <div class="infoText">
-    <span><small><b>FOREVER</b></small></span> UNDER CONSTRUCTION
+    <span><small><b>(STILL)</b></small></span> UNDER CONSTRUCTION
     <span><i>Nathan Ching</i></span>
   </div>
 
@@ -155,12 +142,12 @@
     function restartTimer() {
       timePrompt = setTimeout(function() {
         changeImage();
-      }, 45000);
+      }, 60000);
     }
 
     function changeImage() {
       backgroundCount++;
-      imageUrl = "url('https://source.unsplash.com/collection/495599/1600&" + backgroundCount + "')";
+      imageUrl = "url('https://source.unsplash.com/collection/1016249/1600&" + backgroundCount + "')";
       if (currentFrame == 1) {
         currentName = "backgroundImage1";
         hideName = "backgroundImage2";
